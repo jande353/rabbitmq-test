@@ -1,0 +1,33 @@
+apiVersion: rabbitmq.com/v1beta1
+kind: RabbitmqCluster
+metadata:
+  name: rabbitmq-test-cluster01
+  namespace: rabbitmq
+spec:
+  delayStartSeconds: 30
+  secretBackend:
+    externalSecret:
+      name: ''
+  resources:
+    limits:
+      cpu: 500m
+      memory: 1Gi
+    requests:
+      cpu: 500m
+      memory: 1Gi
+  terminationGracePeriodSeconds: 604800
+  override:
+    statefulSet:
+      spec:
+        template:
+          spec:
+            containers: []
+            securityContext: {}
+  service:
+    type: ClusterIP
+  tls: {}
+  image: 'rabbitmq:4.0.5-management'
+  replicas: 3
+  rabbitmq: {}
+  persistence:
+    storage: 10Gi
