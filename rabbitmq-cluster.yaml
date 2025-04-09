@@ -4,18 +4,14 @@ metadata:
   name: rabbitmq-test-cluster01
   namespace: rabbitmq
 spec:
-  delayStartSeconds: 30
-  secretBackend:
-    externalSecret:
-      name: ''
+  replicas: 3
   resources:
-    limits:
-      cpu: 500m
-      memory: 1Gi
     requests:
       cpu: 500m
-      memory: 1Gi
-  terminationGracePeriodSeconds: 604800
+      memory: 2Gi
+    limits:
+      cpu: 500m
+      memory: 2Gi
   override:
     statefulSet:
       spec:
