@@ -1,0 +1,16 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: rabbitmq-test-cluster01
+  namespace: rabbitmq
+spec:
+  path: /
+  to:
+    name: rabbitmq-test-cluster01
+    weight: 100
+    kind: Service
+  host: ''
+  tls: null
+  port:
+    targetPort: management
+  alternateBackends: []
