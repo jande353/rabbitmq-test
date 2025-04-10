@@ -4,6 +4,7 @@ metadata:
   name: rabbitmq-test-cluster01
   namespace: rabbitmq
 spec:
+  host: rabbitmq-test-cluster01-rabbitmq.epical-test-35478b8a1f2793ad207bc2eca8dccf01-i000.eu-de.containers.appdomain.cloud
   path: /
   to:
     name: rabbitmq-test-cluster01
