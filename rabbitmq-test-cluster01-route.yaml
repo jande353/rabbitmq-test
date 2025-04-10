@@ -9,8 +9,6 @@ spec:
     name: rabbitmq-test-cluster01
     weight: 100
     kind: Service
-  host: ''
   tls: null
   port:
     targetPort: management
-  alternateBackends: []
