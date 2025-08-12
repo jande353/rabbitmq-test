@@ -4,7 +4,7 @@ metadata:
   name: rabbitmq-test-cluster01
   namespace: rabbitmq
   annotations:
-    rabbitmq.com/topology-allowed-namespaces: "rabbitmq"
+    rabbitmq.com/topology-allowed-namespaces: "*"
 spec:
   replicas: 3
   resources:
