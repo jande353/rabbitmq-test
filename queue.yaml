@@ -1,0 +1,13 @@
+apiVersion: rabbitmq.com/v1beta1
+kind: Queue
+metadata:
+  name: jimmy3
+  namespace: rabbitmq
+spec:
+  rabbitmqClusterReference:
+    name: rabbitmq-test-cluster01
+    namespace: rabbitmq
+  vhost: /
+  name: JIMMY3
+  type: Quorum
+  durable: true
