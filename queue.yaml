@@ -9,5 +9,5 @@ spec:
     namespace: rabbitmq
   vhost: /
   name: JIMMY3
-  type: Quorum
+  type: quorum
   durable: true
