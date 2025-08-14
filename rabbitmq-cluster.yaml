@@ -24,7 +24,7 @@ spec:
   service:
     type: ClusterIP
   tls: {}
-  image: 'rabbitmq:3.12.14-management'
+  image: 'rabbitmq:3.13.7-management'
   replicas: 3
   rabbitmq: {}
   persistence:
