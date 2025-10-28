@@ -12,7 +12,7 @@ spec:
       log.console.level = debug
       auth_backends.1 = rabbit_auth_backend_oauth2
       management.oauth_enabled = true
-      management.oauth_client_id = rabbitmq-proxy-client
+      management.oauth_client_id = Rabbit_prod_mgt_ui
       management.oauth_scopes = openid profile rabbitmq.tag:administrator
       management.oauth_provider_url = https://keycloak-keycloak.epical-test-35478b8a1f2793ad207bc2eca8dccf01-i000.eu-de.containers.appdomain.cloud/auth/realms/test/
       auth_oauth2.resource_server_id = rabbitmq
