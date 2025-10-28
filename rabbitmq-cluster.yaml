@@ -14,6 +14,7 @@ spec:
       management.oauth_enabled = true
       management.oauth_client_id = rabbitmq-proxy-client
       management.oauth_scopes = openid profile rabbitmq.tag:administrator
+      management.oauth_provider_url = https://keycloak-keycloak.epical-test-35478b8a1f2793ad207bc2eca8dccf01-i000.eu-de.containers.appdomain.cloud/auth/realms/test/
       auth_oauth2.resource_server_id = rabbitmq
       auth_oauth2.preferred_username_claims.1 = user_name
       auth_oauth2.additional_scopes_key = extra_scope
