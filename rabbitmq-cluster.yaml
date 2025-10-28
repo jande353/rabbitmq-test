@@ -20,6 +20,7 @@ spec:
       auth_oauth2.additional_scopes_key = extra_scope
       auth_oauth2.issuer = https://keycloak-keycloak.epical-test-35478b8a1f2793ad207bc2eca8dccf01-i000.eu-de.containers.appdomain.cloud/auth/realms/test/
       auth_oauth2.https.peer_verification = verify_none
+      auth_oauth2.https.fail_if_no_peer_cert = false
     additionalPlugins:
       - rabbitmq_management
       - rabbitmq_auth_backend_oauth2
