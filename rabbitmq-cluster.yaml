@@ -9,6 +9,7 @@ spec:
   replicas: 3
   rabbitmq: 
     additionalConfig: |
+      log.console.level = debug
       auth_backends.1 = rabbit_auth_backend_oauth2
       management.oauth_enabled = true
       management.oauth_client_id = rabbitmq-proxy-client
