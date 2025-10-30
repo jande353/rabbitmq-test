@@ -11,6 +11,7 @@ spec:
     additionalConfig: |
       log.console.level = debug
       auth_backends.1 = rabbit_auth_backend_oauth2
+      auth_backends.2 = internal
       management.oauth_enabled = true
       management.oauth_client_id = rabbitmq-client-code
       management.oauth_scopes = openid profile rabbitmq.tag:administrator
