@@ -14,16 +14,15 @@ spec:
       management.oauth_enabled = true
       management.oauth_client_id = rabbitmq-client-code
       management.oauth_scopes = openid profile rabbitmq.tag:administrator
-      management.oauth_provider_url = https://keycloak-keycloak.epical-test-35478b8a1f2793ad207bc2eca8dccf01-i000.eu-de.containers.appdomain.cloud/auth/realms/test/
+      management.oauth_provider_url = https://keycloak.keycloak.svc/auth/realms/test
       auth_oauth2.resource_server_id = rabbitmq
       auth_oauth2.preferred_username_claims.1 = user_name
       auth_oauth2.preferred_username_claims.2 = preferred_username
-      auth_oauth2.additional_scopes_key = extra_scope
-      auth_oauth2.issuer = https://keycloak-keycloak.epical-test-35478b8a1f2793ad207bc2eca8dccf01-i000.eu-de.containers.appdomain.cloud/auth/realms/test/
+      auth_oauth2.issuer = https://keycloak.keycloak.svc/auth/realms/test
       auth_oauth2.https.peer_verification = verify_none
       auth_oauth2.https.fail_if_no_peer_cert = false
       auth_oauth2.verify_aud = false
-      auth_oauth2.jwks_uri = https://keycloak-keycloak.epical-test-35478b8a1f2793ad207bc2eca8dccf01-i000.eu-de.containers.appdomain.cloud/auth/realms/test/protocol/openid-connect/certs
+      auth_oauth2.additional_scopes_key = realm_access.roles
     additionalPlugins:
       - rabbitmq_management
       - rabbitmq_auth_backend_oauth2
