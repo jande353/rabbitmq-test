@@ -44,8 +44,6 @@ spec:
             securityContext: {}
   service:
     type: ClusterIP
-  tls:
-    secretName: rabbitmq-server-cert
   image: 'rabbitmq:4.2.0-management'
   replicas: 3
   persistence:
